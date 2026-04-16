@@ -109,7 +109,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/rachel-cv.pdf"
+              href="https://drive.google.com/file/d/1Mkun2hxmJlm8Xs5O9u2Ur6DfL_5zLBAI/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-4 py-3 text-sm font-medium text-text-secondary hover:text-orange hover:bg-bg-card rounded-lg transition-colors"
