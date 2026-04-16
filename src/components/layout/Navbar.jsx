@@ -41,8 +41,8 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-          ? 'bg-bg-dark/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-white/5'
-          : 'bg-transparent'
+        ? 'bg-bg-dark/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-white/5'
+        : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
@@ -67,7 +67,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/rachel-cv.pdf"
+              href="https://drive.google.com/file/d/1Mkun2hxmJlm8Xs5O9u2Ur6DfL_5zLBAI/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-text-secondary hover:text-orange transition-colors duration-200"

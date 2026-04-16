@@ -2,7 +2,7 @@ import { HiArrowUpRight } from 'react-icons/hi2';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-bg-dark" id="home">
+    <section className="relative min-h-screen lg:min-h-0 flex flex-col items-center justify-center overflow-hidden bg-bg-dark pt-24 pb-16 lg:py-24" id="home">
       {/* Decorative orange circle - top right */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] gradient-circle pointer-events-none" />
       {/* Decorative wavy lines - left side */}
@@ -78,7 +78,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="relative z-20 mt-75 w-full flex justify-center px-6">
+        <div className="relative z-20 mt-8 lg:mt-12 w-full flex justify-center px-6">
           <div className="flex gap-2 items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-3 py-3 shadow-lg w-full max-w-xs justify-center hover:bg-white/10 transition-all duration-300 hover:-translate-y-1">
             <a href="#projects" className="btn-primary">
               Portfolio

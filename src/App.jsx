@@ -7,6 +7,7 @@ import GLEAMPage from './pages/projects/GLEAMPage';
 import PegadaianPage from './pages/projects/PegadaianPage';
 import SalesShippingPage from './pages/projects/SalesShippingPage';
 import PizzaSalesPage from './pages/projects/PizzaSalesPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,17 +24,14 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects/gleam" element={<GLEAMPage />} />
-            <Route path="/projects/pegadaian" element={<PegadaianPage />} />
-            <Route path="/projects/sales-shipping" element={<SalesShippingPage />} />
-            <Route path="/projects/pizza-sales" element={<PizzaSalesPage />} />
-          </Routes>
-        </main>
-        <Footer />
+        <Routes>
+          <Route path="/" element={<><Navbar /><main className="flex-grow"><HomePage /></main><Footer /></>} />
+          <Route path="/projects/gleam" element={<><Navbar /><main className="flex-grow"><GLEAMPage /></main><Footer /></>} />
+          <Route path="/projects/pegadaian" element={<><Navbar /><main className="flex-grow"><PegadaianPage /></main><Footer /></>} />
+          <Route path="/projects/sales-shipping" element={<><Navbar /><main className="flex-grow"><SalesShippingPage /></main><Footer /></>} />
+          <Route path="/projects/pizza-sales" element={<><Navbar /><main className="flex-grow"><PizzaSalesPage /></main><Footer /></>} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
